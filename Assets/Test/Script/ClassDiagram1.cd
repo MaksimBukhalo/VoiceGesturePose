@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="Klak.TestTools.ImageSource">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Klak.TestTools.ImageSource.SourceType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Sqripts\ImageSource.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQQBEAAgQSBKAAAAAAAgIAAEAAAABBACCAYASAAAAAA=</HashCode>
+      <FileName>Assets\Sqripts\ImageSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeastSquares.Undertone.SpeechEngine">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="LeastSquares.Undertone.SpeechEngine.TranscriptionState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Sqripts\Undertone\Scripts\SpeechEngine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABQCAgELUAAAAgMhBKCCAAIgAAAAAIEIIAAIAAAkE=</HashCode>
+      <FileName>Assets\Sqripts\Undertone\Scripts\SpeechEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PictureComandExample">
+    <Position X="7.25" Y="4.25" Width="1.25" />
+    <AssociationLine Name="ImageSource" Type="Klak.TestTools.ImageSource" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="5.247" />
+        <Point X="6.5" Y="5.247" />
+        <Point X="6.5" Y="2.25" />
+        <Point X="5.938" Y="2.25" />
+        <Point X="5.938" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QATIAAIAACMgDAAAQAEEAAAEAAAAAAQCAAAAAAAAACA=</HashCode>
+      <FileName>Assets\Sqripts\PictureComandExample.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ImageSource" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.996" />
+  </Class>
+  <Class Name="VoiceComandExample">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <AssociationLine Name="SpeechEngine" Type="LeastSquares.Undertone.SpeechEngine" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13" Y="5.636" />
+        <Point X="13.24" Y="5.636" />
+        <Point X="13.24" Y="2.675" />
+        <Point X="13.5" Y="2.675" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIQAAAAACCKABAgAQAAAACAEgAAAAAAAAASgAAgAIAA=</HashCode>
+      <FileName>Assets\Sqripts\VoiceComandExample.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SpeechEngine" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="VoiceAndPictureComandExample">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <AssociationLine Name="ImageSource" Type="Klak.TestTools.ImageSource" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.25" Y="5.74" />
+        <Point X="9" Y="5.74" />
+        <Point X="9" Y="9.648" />
+        <Point X="7.958" Y="9.648" Type="JumpStart" />
+        <Point X="7.792" Y="9.648" Type="JumpEnd" />
+        <Point X="5.125" Y="9.648" />
+        <Point X="5.125" Y="8.03" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SpeechEngine" Type="LeastSquares.Undertone.SpeechEngine" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.75" Y="6.083" />
+        <Point X="11.25" Y="6.083" />
+        <Point X="11.25" Y="10.011" />
+        <Point X="12.167" Y="10.011" Type="JumpStart" />
+        <Point X="12.333" Y="10.011" Type="JumpEnd" />
+        <Point X="14.25" Y="10.011" />
+        <Point X="14.25" Y="9.761" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QISIAAIACCOADAAAQAEEAAAEgAAQAAQAAASgAAgCIKA=</HashCode>
+      <FileName>Assets\Sqripts\VoiceAndPictureComandExample.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ImageSource" />
+      <Property Name="SpeechEngine" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.638" />
+  </Class>
+  <Class Name="SavePictureComand">
+    <Position X="2" Y="2.75" Width="1.5" />
+    <AssociationLine Name="ImageSource" Type="Klak.TestTools.ImageSource" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.616" />
+        <Point X="3.875" Y="3.616" />
+        <Point X="3.875" Y="2.785" />
+        <Point X="4.75" Y="2.785" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAQCAAAAACACAAQBAAEEAAAAAAAAAAAAACgAIAAAAAE=</HashCode>
+      <FileName>Assets\Sqripts\SavePictureComand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ImageSource" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="InteractiveExampleGlobal">
+    <Position X="9.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQQAABAACQABQIAAAACAQAAAAIAAAAIgAASAACACQA=</HashCode>
+      <FileName>Assets\Sqripts\InteractiveExampleGlobal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="VoiceComandExample" />
+      <Property Name="VoiceAndPictureComandExample" />
+      <Property Name="PictureComandExample" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="IPictureTracker">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAIAAAAACAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Sqripts\IPictureTracker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IVoiceTracker">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAASAAAAAAAA=</HashCode>
+      <FileName>Assets\Sqripts\IVoiceTracker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
